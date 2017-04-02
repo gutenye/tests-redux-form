@@ -1,0 +1,27 @@
+@import "../variables";
+
+.sos-footer {
+  border-top: 1px solid $border-color;
+  padding: 1.5rem;
+  display: flex;
+
+  .button {
+    color: $primary-color;
+    cursor: pointer;
+  }
+
+  .prev {
+    color: gray;
+  }
+
+  .middle {
+    flex: 1;
+  }
+
+  .next {
+    &::after {
+      content: '→';
+      padding-left: 5px;
+    }
+  }
+}

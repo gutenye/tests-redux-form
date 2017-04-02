@@ -1,0 +1,22 @@
+@import '../../variables';
+
+.sos-date {
+  .label {
+    text-align: center;
+  }
+
+  .fields {
+    display: flex;
+
+    input {
+      flex: 1;
+      border: 1px solid $border-color;
+      padding: 0.8rem 0;
+      text-align: center;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

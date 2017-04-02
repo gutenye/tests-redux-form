@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.sos-select {
+  label {
+    text-align: center;
+  }
+  select {
+    width: 100%;
+    border: 1px solid $border-color;
+    border-radius: 0;
+    height: 2rem;
+    background-color: white;
+  }
+  select:focus {
+    outline: none;
+  }
+
+  option {
+    color: black;
+    background-color: white;
+  }
+
+}

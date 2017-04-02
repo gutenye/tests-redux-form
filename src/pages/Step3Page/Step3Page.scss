@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.sos-step3-page {
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-check {
+    fill: #C2E692;
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+
+  .line {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    padding: 0.8rem 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    cursor: pointer;
+
+    &::after {
+      content: '→';
+      padding-left: 5px;
+    }
+  }
+}

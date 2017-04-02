@@ -1,0 +1,67 @@
+@import "./variables";
+
+body {
+  font-family: "SF UI Display", "Helvetica", "Arial", "Ubuntu";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.sos-page {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  width: 100vw;
+
+
+  .section {
+    flex: 1;
+  }
+
+  .form {
+    padding: 2rem;
+
+    .row {
+      margin-top: 1rem;
+    }
+
+    .label {
+      display: block;
+      padding: 1rem 0;
+      text-transform: uppercase;
+    }
+
+    .error {
+      color: $error-color;
+    }
+
+    .input {
+      display: block;
+      border: 0;
+      border-bottom: 2px solid $border-color;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+
+    .input:focus {
+      outline: none;
+    }
+  }
+}
+
+.pageslider-enter {
+  transform: translate(100%, 0);
+}
+
+.pageslider-enter.pageslider-enter-active {
+  transform: translate(0, 0);
+  transition: transform 500ms ease-in-out;
+}
+
+.pageslider-leave {
+  display: none;
+}
